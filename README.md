@@ -21,18 +21,21 @@ cd advanced-web-security-scanner
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
+## Quick Start
+- Full scan of a target :
+```python vul.py https://example.com```
 
-# Full scan of a target
-python vul.py https://example.com
+- Run selected modules only :
+```python vul.py https://example.com --modules headers,dirs,cve```
 
-# Run selected modules only
-python vul.py https://example.com --modules headers,dirs,cve
-
-# Directory brute-force with a custom wordlist & extra extensions
+- Directory brute-force with a custom wordlist & extra extensions :
+```
 python vul.py https://example.com \
   --wordlist dir.txt --extensions .php,.bak \
   --threads 20
 ```
+
 Ethical notice
 Run the scanner only against systems you own or have explicit permission to test.
 
@@ -52,10 +55,10 @@ beautifulsoup4>=4.0
 
 Pin exact versions in production environments to ensure repeatable builds.
 
-Roadmap
-Automatic rate-limit adaptation
-HTML / Markdown report templates
-Burp Suite plugin export
+## Roadmap
+ - Automatic rate-limit adaptation
+ - HTML / Markdown report templates
+ - Burp Suite plugin export
 
 Contributions are welcome—open an issue or submit a PR!
 
