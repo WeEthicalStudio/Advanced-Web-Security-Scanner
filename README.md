@@ -63,8 +63,4 @@ Contributions are welcome—open an issue or submit a PR!
 
 
 ## License
-
 Released under the MIT License – see LICENSE for details.
-```
-:contentReference[oaicite:0]{index=0}
-```
