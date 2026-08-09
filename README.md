@@ -37,25 +37,27 @@ Ethical notice
 Run the scanner only against systems you own or have explicit permission to test.
 
 ## Output
-```text id="output"
-Two report files are saved under logs/<target-hostname>/ per run:
+Two report files are saved under ```logs/<target-hostname>/``` per run:
 
-scan_<timestamp>.txt – human-readable summary
-scan_<timestamp>.json – structured results for further parsing
-Requirements
-```
+- ```scan_<timestamp>.txt``` – human-readable summary
+- ```scan_<timestamp>.json``` – structured results for further parsing
+
+## Requirements
 Create a requirements.txt beside vul.py with the following minimal dependencies:
-
+```
 requests>=2.0
 urllib3>=2.0
 beautifulsoup4>=4.0
+```
+> Pin exact versions in production environments to ensure repeatable builds.
 
-Pin exact versions in production environments to ensure repeatable builds.
+## Disclaimer
+This project is for educational and authorized security-testing purposes only. Any unauthorized scanning, exploitation, or data collection of third-party assets may violate the law. The authors assume no liability for misuse or damages arising from the use of this tool.
 
-Roadmap
-Automatic rate-limit adaptation
-HTML / Markdown report templates
-Burp Suite plugin export
+## Roadmap
+- Automatic rate-limit adaptation
+- HTML / Markdown report templates
+- Burp Suite plugin export
 
 Contributions are welcome—open an issue or submit a PR!
 
