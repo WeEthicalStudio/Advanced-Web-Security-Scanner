@@ -16,7 +16,7 @@ It helps developers and security engineers perform rapid reconnaissance against 
 
 ## Installation
 ```bash
-git clone https://github.com/your-org/advanced-web-security-scanner.git
+git clone https://github.com/EthicalXStudio/Advanced-Web-Security-Scanner.git
 cd advanced-web-security-scanner
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
